@@ -1,2 +1,39 @@
+
 h1{ color: blue;
+    background-color: #e50505;
 }
+
+h2{ color: rgb(251, 255, 0);
+    background-color: #786188;
+    
+}
+
+h3{ color: rgb(237, 8, 50);
+   
+}
+ul{ 
+   
+    background-color: #eef1f4;
+}
+
+ol{ 
+
+    background-color: #554f7e;
+}
+
+p{ 
+
+    background-color: #63c8d8;
+}
+
+/* Style the list items 
+.pirveli{ background-color: #eefe08;
+    color: rgb(6, 6, 6);
+}
+.meore{ background-color: #19e40e;
+    color: white;
+}
+.mesame{ background-color: #e50505;
+    color: rgb(10, 68, 203);
+}
+    */
