@@ -1,26 +1,64 @@
 
-        /* კვადრატული კონტეინერი */
-       .div {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh; /* ეკრანის სიმაღლე */
+.container {
+    display: flex;
+    gap: 20px;             /* მანძილი კვადრატებს შორის */
+}
+
+/* კვადრატული კონტეინერი */
+ .square-box {
+     height: 500px;        /* კვადრატის სიმაღლე */
+     overflow: hidden;     /* ფოტო არ გადმოიფანტოს */
+     border: 2px solid #000; /* საზღვრის ფერი */
+     margin: 20px;         /* სივრცე კვადრატებს შორის */
+     justify-content: center;
+     align-items: center;
+     border-radius: 8px;   /* კუთხეების მომრგვალება (არჩევითია) */
+     display: flex;
+     width: 390px;         /* კვადრატის სიგანე */
+                 
+
         }
-        .square-box {
-            width: 300px;         /* კვადრატის სიგანე */
-            height: 300px;        /* კვადრატის სიმაღლე */
-            border: 2px solid #333; /* ჩარჩოს ფერი და სისქე (არჩევითია) */
-            overflow: hidden;     /* ზედმეტი ნაწილების ჩამოჭრა */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 8px;   /* კუთხეების მომრგვალება (არჩევითია) */
+.square-box img {
+    height: 100%;
+    object-fit: cover;    /* ფოტო ავსებს კვადრატს პროპორციების დარღვევის გარეშე */
+    width: 100%;
         }
 
-        /* ფოტოს სტილი */
-        .square-box img {
-            width: 100%;
-            height: 50%;
-            object-fit: cover;    /* ფოტო ავსებს კვადრატს პროპორციების დარღვევის გარეშე */
-        }
+
+/* მხოლოდ  სექციის სტილი */
+    section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 23px;
+}
+/* სექციაში მხოლოდ H2 ჩანაწერის სტილი   */
+ section h2 { */
+    color: #010101;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+/* სექციაში  horizontal-nav ნავიგაციის ტეგის  სტილი   */
+.horizontal-nav {
+    /* display: flex; */
+    /* flex-wrap: wrap;          პატარა ეკრანებზე ბმულები გადავა ახალ სტრიქონზე */
+    /* gap: 10px;                მანძილი ბმულებს შორის */
+    background-color: #adcdec; /* ნავიგაციის ფონის ფერი */
+    padding: 18px;
+    border-radius: 20px;       /* კუთხეების მომრგვალება */
    
+}
+/* სექციაში  horizontal-nav a ნავიგაციის ტეგის სტილი   */
+.horizontal-nav a {
+    text-decoration: none;    /* ტექსტის ქვეშ ხაზგასმის ამოღება */
+    color: #333333;           /* ტექსტის ფერი */
+    font-weight: 500;
+    font-size: 15px;
+    padding: 16px;        /* შიდა დაშორება (ზევით/ქვევით და მარცხნივ/მარჯვნივ) */
+    border-radius: 6px;
+    transition: all 0.3s ease;/* გლუვი გადასვლა ეფექტისთვის */
+}
+.horizontal-nav a:hover {
+    background-color: #1f1655; /* ლურჯი ფონი */
+    color: #e80a0a;            /* თეთრი ტექსტი */
+    transform: translateY(-2px);/* ოდნავ ამაღლება მაუსის მიტანისას */
+}

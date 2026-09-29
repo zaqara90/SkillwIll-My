@@ -4,18 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>კვადრატული ფოტო</title>
+    <!-- ცალკე CSS ფაილის დაკავშირება -->
+    <link rel="stylesheet" href="style.css">
    
 </head>
 <body>
+<!-- 1. Header -->
+    <header>                                     <!-- სათაურის ველი    -->
+        <h1>დავით ზაქარაია</h1>                  <!-- ვებგვერდის მთავარი სათაური. ​​თითო გვერდზე მხოლოდ ერთი <h1> გამოიყენეთ. ის მომხმარებლებსა და საძიებო სისტემებს გვერდის მთავარ თემას აცნობს. -->
+        <p> SkillWill Frontend Developer-ის სტუდენტი</p>   <!-- პარაგდაფებად წერს ტექსტს და ზევით ქვევით დაშორებაც დიდია ტექსტის   -->
+    </header>
+<hr>
+<!-- 2. About Me -->
+ <main>
+    <section> 
+        <h2>ნავიგაცია</h2>                      <!--ვებგვერდის მეორე დონის სათაური.-->
+             <nav class="horizontal-nav">
+                 <a href="#ჩემი ჰობი" target="_self">ჩემი ჰობი</a>
+                 <a href="#ჩემი მიზნები" target="_self">ჩემი მიზნები</a>
+                 <a href="#განათლება" target="_self">განათლება</a>
+                 <a href="#გამოცდილება" target="_self">გამოცდილება</a>
+                 <a href="#უნარები" target="_self">უნარები</a>
+                 <a href="#ჩემი პროექტები" target="_self">ჩემი პროექტები</a>
+                 <a href="#კონტაქტი" target="_self">კონტაქტი</a>
+                 <a href="#მთავარი" target="_self">მთავარი</a>
+                 <a href="#ჩემს შესახებ" target="_self">ჩემს შესახებ</a> 
+            </nav>
+    </section>
+</main>
 
-    <!-- კვადრატული ბლოკი ფოტოთი 1 -->
-    <div class="square-box">
-        <img src="შენი_ფოტოს_ბმული_ან_სახელი.jpg" alt="ფოტო 1">
-    </div>
- <!-- კვადრატული ბლოკი ფოტოთი 2 -->
-    <div class="square-box">
-        <img src="შენი_ფოტოს_ბმული_ან_სახელი.jpg" alt="ფოტო 3">
-    </div>
+<hr>
+
+    <div class="container">    
+             <!-- კვადრატული ბლოკი ფოტოთი 1 -->
+         <div class="square-box">
+             <img src="image/fiso1.png" alt="ფოტო 1">
+        </div>
+            <!-- კვადრატული ბლოკი ფოტოთი 2 -->
+         <div class="square-box">
+            <img src="image/fiso2.png" alt="ფოტო 2">
+        </div>
+            <!-- კვადრატული ბლოკი ფოტოთი 1 -->
+         <div class="square-box">
+             <img src="image/fiso1.png" alt="ფოტო 1">
+        </div>
+</div>
+<hr>
+
+
+
+
+
 
 </body>
 </html>
