@@ -13,18 +13,30 @@
         <p> SkillWill Frontend Developer-ის სტუდენტი</p>   <!-- პარაგდაფებად წერს ტექსტს და ზევით ქვევით დაშორებაც დიდია ტექსტის   -->
     </header>
 <hr>
-<title>კვადრატული ფოტო</title>
-    <style>
-        /* კვადრატული კონტეინერი */
-        .square-box {
-            width: 150px;         /* კვადრატის სიგანე */
-            height: 200px;        /* კვადრატის სიმაღლე */
-            border: 2px solid #333; /* ჩარჩოს ფერი და სისქე (არჩევითია) */
+    <nav class="horizontal-nav">
+        <a href="#ჩემს შესახებ" target="_self">ჩემს შესახებ</a>
+        <a href="#ჩემი ჰობი" target="_self">ჩემი ჰობი</a>
+        <a href="#ჩემი მიზნები" target="_self">ჩემი მიზნები</a>
+        <a href="#განათლება" target="_self">განათლება</a>
+        <a href="#გამოცდილება" target="_self">გამოცდილება</a>
+        <a href="#უნარები" target="_self">უნარები</a>
+        <a href="#ჩემი პროექტები" target="_self">ჩემი პროექტები</a>
+        <a href="#კონტაქტი" target="_self">კონტაქტი</a>
+        <a href="#მთავარი" target="_self">მთავარი</a>
+
+    </nav>
+        <hr>
+        <title>კვადრატული ფოტო</title> <!-- ვებგვერდის სათაური, რომელიც ბრაუზერის ჩანართზე გამოჩნდება -->
+            <style>
+            .square-box {
+                width: 150px;         /* კვადრატის სიგანე */
+                height: 200px;        /* კვადრატის სიმაღლე */
+                border: 2px solid #333; /* ჩარჩოს ფერი და სისქე (არჩევითია) */
             
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 8px;   /* კუთხეების მომრგვალება (არჩევითია) */
+                display: flex;
+                justify-content: center; /* ფოტოს ცენტრში განთავსება ჰორიზონტალურად */
+                align-items: center;
+                border-radius: 8px;   /* კუთხეების მომრგვალება (არჩევითია) */
         }
 
         /* ფოტოს სტილი */
@@ -42,6 +54,7 @@
     <div class="square-box">
         <img src="image/fiso.png" alt="ფოტო">
     </div>
+     
 <main>
   <!-- 2. About Me -->
     <section> 
